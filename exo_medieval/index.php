@@ -76,21 +76,6 @@ include "Voleur.php";
 
         // Début de l'histoire
 
-    // echo "<br>";
-    // echo $guerrier -> attaque($mage, 50, 50);
-    // echo "<br>";
-    // echo $voleur -> attaque($mage, 30, 20); 
-    // echo "<br>";
-    // echo $mage -> attaque($voleur, 50, 50);
-    // echo "<br><br>";
-    // echo $mage->info();
-    // echo "<br><br>";
-    // echo $voleur -> seDeplace();
-    // echo "<br><br>";
-    // echo $guerrier -> seDeplace();
-    // echo "<br><br>";
-    // echo $guerrier->info();
-
     echo "<br>";
     echo "<p>Bienvenue bande de gueux puants dans la taverne du Porc Variolé, un lieu mal famé où se réunissent les criminels et les marginaux!
     <br> <br>

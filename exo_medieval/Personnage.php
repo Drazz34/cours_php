@@ -7,11 +7,11 @@ abstract class Personnage
     private string $image;
     private string $pseudo;
 
-    public function ptsDeVie()
+    public function ptsDeVie() : int
     {
         return $this->getPseudo() . " a " . $this->getPdv() . " points de vie.";
     }
-    public function vigueur()
+    public function vigueur() : int
     {
         return $this->getPseudo() . " a " . $this->getVigueur() . " points de vigueur.";
     }
@@ -43,7 +43,7 @@ abstract class Personnage
         }
     }
 
-    // fonction de déplacement du personnage, il perd de la vigueur.
+    // fonction d'esquive du personnage, il perd de la vigueur.
 
     public function esquive()
     {

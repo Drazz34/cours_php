@@ -23,18 +23,6 @@ class Guerrier extends Personnage
     {
         return $this->getPseudo() . " a " . $this->getForce() . " points de force.";
     }
-    // public function attaque($personnage)
-    // {
-    //     $this->setVigueur($this->getVigueur()-50);
-    //     $personnage->setPdv($personnage->getPdv()-50);
-    //     // $this->setVigueur(50); si je veux montrer ce qu'il a consommé comme vigueur.
-    //     return $this->getPseudo() . " attaque " . $personnage->getPseudo() . ", il lui reste " . $this->getVigueur() . " points de vigueur. "
-    //      . $personnage->getPseudo() . " perd 50 points de vie. " . $personnage->getPseudo() . " possède désormais " . $personnage->getPdv() . " points de vie.";
-    // }
-    // public function attaqueGuerrier($personnage)
-    // {
-    //     return $this->attaque($personnage, 50, 50);
-    // }
 
     /**
      * Get the value of force
@@ -47,7 +35,7 @@ class Guerrier extends Personnage
     /**
      * Set the value of force
      *
-     * @return  void
+     * @return void
      */ 
     public function setForce($force)
     {

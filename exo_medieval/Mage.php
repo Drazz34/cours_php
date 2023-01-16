@@ -33,7 +33,7 @@ class Mage extends Personnage
     /**
      * Set the value of magie
      *
-     * @return  void
+     * @return void
      */ 
     public function setMagie($magie)
     {
