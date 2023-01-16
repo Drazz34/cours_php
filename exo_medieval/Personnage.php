@@ -7,11 +7,11 @@ abstract class Personnage
     private string $image;
     private string $pseudo;
 
-    public function ptsDeVie() : int
+    public function ptsDeVie()
     {
         return $this->getPseudo() . " a " . $this->getPdv() . " points de vie.";
     }
-    public function vigueur() : int
+    public function vigueur()
     {
         return $this->getPseudo() . " a " . $this->getVigueur() . " points de vigueur.";
     }

@@ -1,9 +1,9 @@
 <?php
 
-include "Personnage.php";
-include "Guerrier.php";
-include "Mage.php";
-include "Voleur.php";
+include_once "Personnage.php";
+include_once "Guerrier.php";
+include_once "Mage.php";
+include_once "Voleur.php";
 
 ?>
 
