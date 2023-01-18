@@ -2,18 +2,9 @@
 
 <?php
 
+include_once "mon_tableau.php";
+
 // PARTIE 1
-
-$personnes = array(
-    'mdupond' => array('prenom' => 'Martin', 'nom' => 'Dupond', 'age' => 25, 'ville' => 'Paris'),
-    'jm' => array('prenom' => 'Jean', 'nom' => 'Martin', 'age' => 20, 'ville' => 'Villetaneuse'),
-    'toto' => array('prenom' => 'Tom', 'nom' => 'Tonge', 'age' => 18, 'ville' => 'Epinay'),
-    'arn' => array('prenom' => 'Arnaud', 'nom' => 'Dupond', 'age' => 33, 'ville' => 'Paris'),
-    'email' => array('prenom' => 'Emilie', 'nom' => 'Ailta', 'age' => 46, 'ville' => 'Villetaneuse'),
-    'dask' => array('prenom' => 'Damien', 'nom' => 'Askier', 'age' => 7, 'ville' => 'Villetaneuse')
-);
-
-// print_r(gettype(array_keys($personnes)[0]));
 
 // Question 1
 
@@ -108,4 +99,22 @@ echo "<br><br>";
 
 ?>
 
-<a href="pseudo.php?pseudo=toto">Qui est Toto ?</a>
+<!-- <a href="pseudo.php?pseudo=toto">Qui est Toto ?</a> -->
+
+<br><br>
+
+<!-- QUESTION 2
+
+Créer un formulaire permettant à l’utilisateur de saisir le pseudonyme à rechercher afin de faciliter la saisie pour l’utilisateur. -->
+
+<form action="pseudo.php" method="post">
+
+    <label for="pseudo">Pseudo : </label>
+    <input type="text" name="pseudo" size="24" value="<?php if(isset($_POST["pseudo"])){echo $_POST["pseudo"];}?>">
+    <input type="submit" name="envoie" value="Qui es-tu ?"></button>
+
+</form>
+
+<br><br>
+
+<!--  Mettre ensuite directement le formulaire dans le script PHP créé précédemment afin de pouvoir effectuer facilement plusieurs recherches. -->
