@@ -17,7 +17,7 @@
             <input type="radio" name="saisie[sexe]" value="F" /> Féminin
             <input type="radio" name="saisie[sexe]" value="?" checked="checked" /> Ne sait pas
             <br />Photo :
-            <input type="fle" name="saisie[photo]" size="50" />
+            <input type="file" name="saisie[photo]" size="50" />
             <br />Couleurs préférées :
             <input type="checkbox" name="saisie[couleurs][bleu]" />Bleu
             <input type="checkbox" name="saisie[couleurs][blanc]" />Blanc

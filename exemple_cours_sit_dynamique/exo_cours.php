@@ -1,4 +1,4 @@
-<form action="saisie_exo.php" method="post">
+<form action="saisie_exo.php" method="post" enctype="multipart/form-data">
     <label> Nom : </label>
     <input type="text" name="nom" size="20" maxlength="20" />
     <br>
