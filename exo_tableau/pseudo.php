@@ -5,14 +5,14 @@ include_once "mon_tableau.php";
 // session en php avec cookie pour récuperer le tableau sans avoir à le recopier du fichier tableau.php
 // ou le transformer en json avec un lien ?
 
-// $pseudo = $_GET["pseudo"];
-$pseudo_form = $_POST["pseudo"];
+// $pseudo = filter_input(INPUT_GET, "pseudo");
+// $pseudo_form = filter_input(INPUT_POST, "pseudo");
 
 // var_dump($_POST);
 // print_r($_POST);
 
 $info = null;
-// $pseudo = filter_input(INPUT_GET, 'pseudo', FILTER_SANITIZE_SPECIAL_CHARS);
+$pseudo = filter_input(INPUT_GET, 'pseudo', FILTER_SANITIZE_SPECIAL_CHARS);
 $pseudo_form = filter_input(INPUT_POST, 'pseudo', FILTER_SANITIZE_SPECIAL_CHARS);
 
 
@@ -43,3 +43,26 @@ if ($info == null) {
 //     echo "Age: " . $info['age'] . "<br>";
 //     echo "Ville: " . $info['ville'] . "<br>";
 // }
+
+// CORRECTION
+
+// if (isset($pseudo) && !empty($pseudo))
+// {
+//     foreach ($personnes[$pseudo] as $key => $value) {
+//         echo $key . " : " . $value . "<br>";
+//     }
+// }
+
+// $pseudo2 = filter_input(INPUT_POST, "pseudo");
+
+// if (isset($pseudo2) && !empty($pseudo2))
+// {
+//     echo "Pseudo : $pseudo2 <br>";
+//     foreach ($personnes[$pseudo2] as $key => $value) {
+//                 echo $key . " : " . $value . "<br>";
+//             }
+// }
+
+// ?>
+
+<a href="tableau.php?pseudo=<?= $pseudo_form ?>">Retour</a>

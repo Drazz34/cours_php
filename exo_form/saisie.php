@@ -17,10 +17,9 @@
     $submit = filter_input(INPUT_POST, "Enregistrer", FILTER_SANITIZE_SPECIAL_CHARS);
     $auteur = $nom . " " . $prenom;
 
-    var_dump($nom, $prenom);
     ?>
 
-    <form action="saisie.php" method="post">
+    <form action="saisie.php" method="POST">
 
         <label for="nom">Nom : </label>
         <input type="text" name="nom" size="40">
